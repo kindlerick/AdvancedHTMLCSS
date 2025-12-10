@@ -1,1 +1,533 @@
 
+@font-face {
+  font-family: 'Playfair';
+  src: url('/fonts/Playfair-VariableFont_opsz,wdth,wght.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-VariableFont_wdth,wght.woff') format('truetype');
+}
+
+
+/* ============================
+   MOBILE — 1 COLUMN
+   ============================ */
+@media (max-width: 768px) {
+
+    /* ===== HEADER ===== */
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5vw;
+        height: auto;
+    }
+
+    .headerLeft {
+        width: 20rem;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #topImage {
+        width: 20rem;
+        height: auto;
+    }
+
+    .headerRight {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .headerRight h2 {
+        font-family: Playfair;
+        font-size: 2rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .headerRight p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        justify-self: center;
+    }
+
+    .headerLogoBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    /* ===== BODY ===== */
+
+    body {
+        background-color: white;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .projects h2 {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .project {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        background: aliceblue;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .projectBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin: 0 1vw;
+        border-radius: 4px;
+    }
+
+    .logoContainer {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .logoContainer img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #projectP {
+        height: 40px;
+        padding: 10px;
+        margin-left: 5px;
+    }
+
+    .project h3 {
+        margin-left: 0;
+        justify-self: center;
+    }
+
+    .square h3 {
+        font-family: Playfair;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+        line-height: 1.5;
+    }
+
+
+    /* ===== FOOTER ===== */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(143, 180, 168);
+        align-content: center;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .leftFooter {
+        color:antiquewhite;
+        font-size: 1.2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        justify-self: center;
+        align-self: center;
+        padding: 2vw;
+        margin-left: 6vw;
+        margin-right: 3vw;
+        flex-shrink: 0;
+    }
+
+    .footerImage {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .footerImage #bottomImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footerLogoBar {
+        display: flex;
+        gap: 2vw;
+    }
+
+
+}
+
+/* TABLET — 2 COLUMNS */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* ===== HEADER ===== */
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        padding-top: 5vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .headerLeft {
+        width: 30vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #topImage {
+        width: 150%;
+        height: auto;
+    }
+
+    .headerRight {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        flex-shrink: 0;
+        padding: 2vw;
+        width: 40vw;
+        background-color: white;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .headerRight h2 {
+        font-family: Playfair;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .headerRight p {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    .headerLogoBar {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+
+    /* ===== BODY ===== */
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+        margin: 5vw;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        background: aliceblue;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .project p {
+        margin: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .projectBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin: 0 1vw;
+        border-radius: 4px;
+    }
+
+    .logoContainer {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .logoContainer img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .projectBarContent {
+        display: flex;
+        align-items: center;
+    }
+
+    .square {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 12rem;
+        color: white;
+    }
+
+
+    /* ===== FOOTER ===== */
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(143, 180, 168);
+        justify-content: space-between;
+        align-items: center;
+        padding: 4vw;
+        height: auto;
+    }
+
+    .leftFooter {
+        width: 40vw;
+        color: antiquewhite;
+        font-size: 1.3rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 2vw;
+    }
+
+    .footerImage {
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerImage #bottomImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .footerLogoBar {
+        display: flex;
+        gap: 2vw;
+        margin-top: 1rem;
+    }
+}
+
+/* ============================
+   DESKTOP — 3 COLUMNS
+   ============================ */
+@media (min-width: 1025px) {
+
+    /* ===== HEADER ===== */
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        padding-top: 5vw;
+        height: auto;
+    }
+
+    .headerLeft {
+        display: flex;
+        height: 25vw;
+    }
+
+    #topImage {
+        width: 60%;
+        height: auto;
+        margin-left: 20vw;
+    }
+
+    .headerRight {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        flex-shrink: 0;
+        padding: 2vw 3vw;
+        width: 35vw;
+        margin-right: 10vw;
+        background-color: white;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    }
+
+
+    /* ===== BODY ===== */
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5vw;
+        margin: 5vw;
+        width: auto;
+        height: auto;
+        justify-self: center;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background: aliceblue;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .project p {
+        margin: 2rem;
+    }
+
+    .projectBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1vw;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    .logoContainer {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .logoContainer img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .projectBarContent {
+        display: flex;
+    }
+
+    .square {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        color: white;
+    }
+
+
+    /* ===== FOOTER ===== */
+
+    #bottomImage {
+        width: 60%;
+        height: auto;
+    }
+
+    .footer {
+        background-color: rgb(143, 180, 168);
+        align-content: center;
+        height: 40vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .leftFooter {
+        color:antiquewhite;
+        font-size: 1.2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        justify-self: center;
+        align-self: center;
+        padding: 2vw;
+        margin-left: 6vw;
+        margin-right: 3vw;
+        flex-shrink: 0;
+        height: 25vw;
+        width: 30vw;
+    }
+
+    .footerImage {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .footerImage #bottomImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footerLogoBar {
+        display: flex;
+        gap: 2vw;
+    }
+
+}
+
+h1, h2, h3 {
+    font-family: Roboto;
+}
+
+p {
+    font-family: Playfair;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+body {
+    height: auto;
+    background-color: rgb(245, 235, 221);
+}
+
+.body h2 {
+    margin-top: 3vw;
+    margin-left: 8vw;
+    font-size: 3rem;
+    font-family: Playfair;
+}
+
+
+#square1 {
+    background-color: rgb(231, 56, 56);
+}
+#square2 {
+    background-color: rgb(221, 221, 111);
+}
+#square3 {
+    background-color: rgb(55, 182, 82);
+}
+#square4 {
+    background-color: rgb(46, 111, 185);
+}
+#square5 {
+    background-color: rgb(207, 39, 179);
+}
+#square6 {
+    background-color: rgb(168, 79, 37);
+}
+
+.headerLogoBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1vw;
+    margin-right: 1vw;
+} 
+
+.logo {
+    width: 7%;
+    height: auto;
+}
